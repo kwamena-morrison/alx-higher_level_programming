@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Solves the N-queens puzzle.
-Determines all possible solutions to placing N
+"""Solving the N-queens puzzle.
+This code Determines all possible solutions to placing N
 N non-attacking queens on an NxN chessboard.
 Example:
     $ ./101-nqueens.py N
@@ -16,7 +16,7 @@ import sys
 
 
 def init_board(n):
-    """Initialize an `n`x`n` sized chessboard with 0's."""
+    """Initializing an `n`x`n` sized chessboard with 0's."""
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
